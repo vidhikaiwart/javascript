@@ -4,34 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <style>
-    .change{
-        color : pink;
-        background-color: brown;
-    }
-   </style>
+    <style>
+        *{
+            margin :0;
+            padding :0;
+            box-sizing: border-box;
+        }
+     html , body {
+        width :100%;
+        height: 100%;
+     }
+        #main{
+        width : 100%;
+        height :100%;
+        background-color: rgb(42, 24, 24);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        }
+        h1{
+            color:aquamarine;
+            font-size:  10rem;
+            font-weight: 300;
+            user-select :none;
+        }
+        input{
+            display: none;
+        }
+        .btn{
+            padding: 12px 22px;
+            background-color: green;
+            color:blanchedalmond;
+            border-radius: 30px;
+
+        }
+        .btn:hover{
+            background-color: red;
+        }
+    </style>
+  
 </head>
 <body>
 
-    <h1 id = "abc" > hey element selection </h1>
-       
-    <h1 class = "abcd"> hey element selection </h1>
 
-            
-    <h1 id = "a" class ="change "> hey element selection </h1>
+ <div id = "main">
+    <input type="file">
+<div class="btn">
+    upload file
+</div>
+
+    <!-- <h1> h </h1> -->
+ </div>
+    <!-- <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eligendi fuga consequuntur sint 
+      voluptatibus ipsum! Reiciendis eum maiores doloremque earum facere nostrum veritatis vitae ea, quaerat nemo non, veniam tenetur!</p>
+           
+    <input type="text" placeholder="name ">
+    <h1 > Event </h1>
  
+    <h3 id = "h3">select your device</h3>
 
-    <h2> hey dude </h2>
-    
+    <select name="" id="">
+               <option selected disabled>chhose your device</option>
 
-    <h4> hey dude </h4>
+        <option value="nokia">nokia</option>
+        <option value="vivo">vivo</option>
 
-    <a href="http//www.google.com"> download link </a>
+        <option value="oopo">oopo</option>
+        <option value="sumsung">sumsung</option>
+        <option value="apple">apple</option>
 
-        
-    <img src="" alt=" broken image ">
+    </select> -->
 
-    <script src="script3.js"></script>
+   
+
+    <script src="script4.js"></script>
 
 </body>
 </html>
