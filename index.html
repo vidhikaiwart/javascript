@@ -146,13 +146,139 @@ button{
     border-radius: 2px;
     /* border-color: aquamarine; */
 /* } */
+
+
+/* small{
+  color:red;
+
+}
+.hide{
+  display: none;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: none;
+}
+
     </style>
   
 </head>
 <body>
 
-    <input type="text " placeholder=" write your opinion">
-    <h1>total character : <span> 0 </span> </h1>
+   <div class="container">
+    <h2>Login Form</h2>
+    <form id="Form">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter your email">
+      <div class="error" id="emailError">Please enter a valid email</div>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+      <div class="error" id="passwordError">Password must be at least 6 characters</div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+<!-- <form action="" >
+  < inline vailidation  -->
+  <!-- <input required minlength="3" maxlength="10" type="text " class = "name"  placeholder="name">
+  <br><div class ="hide"><small> your name should be greater than 2 character</small>
+  <br></div>
+  <br>
+  <input type="email" placeholder="email" class="" >
+  <br><br> -->
+  <!-- pattern attribute -->
+  <!-- <input  pattern = "[a-z]{1,9}" required type="password " placeholder="password">
+    <br><br>
+  <select name="" id="">
+    <option value="male">male</option>
+    <option value="female">female</option>
+    <option value="other">other</option>
+</select>
+    <br><br>
+<textarea name="" id="" placeholder="tell us about you"></textarea>
+  <br><br>
+  <input type="submit">
+
+
+</form> --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <input type="text " placeholder=" write your opinion">
+    <h1>total character : <span> 0 </span> </h1> -->
     <!-- <div class="a">
         <div class="b">
             <div class="c">
@@ -192,7 +318,7 @@ button{
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis modi consequuntur eius eligendi
       ipsum architecto eveniet optio impedit eos nulla!</p>
   </div> -->
-</div>
+<!-- </div> -->
 
 
 
@@ -227,7 +353,7 @@ button{
 
    
 
-    <script src="script4.js"></script>
+    <script src="script5.js"></script>
 
 </body>
 </html>
