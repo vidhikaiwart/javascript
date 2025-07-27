@@ -158,14 +158,14 @@ button{
 
 body {
   font-family: Arial, sans-serif;
-  background: #f2f2f2;
+  background: #4a3131;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.container {
+/* .container {
   background: white;
   padding: 30px;
   border-radius: 10px;
@@ -212,6 +212,63 @@ button:hover {
   font-size: 0.9rem;
   margin-bottom: 10px;
   display: none;
+} */
+ glass-container {
+  width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.filename {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 8px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: width 0.3s ease;
+}
+
+.percentage {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.cancel-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
 }
 
     </style>
@@ -219,7 +276,21 @@ button:hover {
 </head>
 <body>
 
-   <div class="container">
+  <div class="glass-container">
+    <h2>Downloading...</h2>
+    <!-- <p class="filename">myfile.zip</p> -->
+    <div class="progress-bar">
+      <div class="progress" style="width: 60%"></div>
+    </div>
+    <p class="percentage">60%</p>
+    <button class="cancel-btn">Cancel</button>
+  </div>
+
+     <!-- <h1> hey vidhi</h1> -->
+
+    <script src="script6.js"></script>
+
+   <!-- <div class="container">
     <h2>Login Form</h2>
     <form id="Form">
       <label for="email">Email</label>
@@ -232,7 +303,7 @@ button:hover {
 
       <button type="submit">Login</button>
     </form>
-  </div>
+  </div> -->
 <!-- <form action="" >
   < inline vailidation  -->
   <!-- <input required minlength="3" maxlength="10" type="text " class = "name"  placeholder="name">
@@ -256,24 +327,6 @@ button:hover {
 
 
 </form> --> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -350,10 +403,6 @@ button:hover {
         <option value="apple">apple</option>
 
     </select> -->
-
-   
-
-    <script src="script5.js"></script>
 
 </body>
 </html>
