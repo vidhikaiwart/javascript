@@ -195,10 +195,53 @@ let obj ={
 // 15. create a funciton that remove duplecates value from a array 
 
 
-function  remDul(arr){
-    let set = new Set(arr);
-    return [...set];
-}
+// function  remDul(arr){
+//     let set = new Set(arr);
+//     return [...set];
+// }
 
-let resp = remDul([1, 2, 2, 3, 4, 4, 5]);
-console.log(resp);
+// let resp = remDul([1, 2, 2, 3, 4, 4, 5]);
+// console.log(resp);
+
+// 16. difference between parseInt and Number
+
+// console.log(parseInt(133.53445));
+// console.log(Number(133.53445.toFixed(2))); // 133.53
+
+// console.log(parseInt('133.534px'));
+// console.log(Number('133.534px'));
+
+// 17. why does 0.1 + 0.2 !== 0.3 ?
+
+// console.log(0.1 + 0.2 !== 0.3);
+// console.log(0.1 + 0.2 === 0.3);
+// console.log(0.1 + 0.2 );
+
+
+// 18. how would you handle high-precision floating-point math in JS
+
+// let sum = Number((0.1 + 0.2).toFixed(2));
+//     console.log(sum);
+//         console.log(typeof sum);
+
+//             console.log(sum === 0.3);
+
+// 19. what is difference between slice and splice ?
+
+
+let str = "string"
+
+console.log(str.slice(-4));
+// using with array and string  slice 
+
+console.log(str.slice(1,4));
+
+// using with array
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.slice(1, 4));
+console.log(arr);
+
+
+// using splice only aray
+console.log(arr.splice(1, 4));
+console.log(arr);
