@@ -226,22 +226,88 @@ let obj ={
 
 //             console.log(sum === 0.3);
 
-// 19. what is difference between slice and splice ?
+// 19. how would you handle high-precision decimal math in JS
+// let num = require('decimal.js');
+// let n = num(0.1 );
+// let m = num(0.3 );
+
+// let sum = n.plus(m)
+// console.log(sum);
 
 
-let str = "string"
 
-console.log(str.slice(-4));
-// using with array and string  slice 
 
-console.log(str.slice(1,4));
+// let sum = Number((0.1 + 0.2).toFixed(2));
+//     console.log(sum);
+//         console.log(typeof sum);
+
+// 20. what is difference between slice and splice ?
+
+// let str = "string"
+
+// console.log(str.slice(-4));
+// using with array and string  slice cut the given 
+// part in array and string 
+// but dont change in original array and string   
+
+// console.log(str.slice(1,4));
 
 // using with array
-let arr = [1, 2, 3, 4, 5];
-console.log(arr.slice(1, 4));
-console.log(arr);
+// let arr = [1, 2, 3, 4, 5];
+// console.log(arr.slice(1, 4));
+// console.log(arr);
 
 
-// using splice only aray
-console.log(arr.splice(1, 4));
-console.log(arr);
+// using splice only change original array ,slice , update , delete, 
+// no change string
+// console.log(arr.splice(1, 4 ,0, 'a' , 'd'));
+// console.log(arr);
+
+// 21. create a function that reverse each word of a given sentence 
+
+
+// let sent = "Hello World";
+
+// let finalres = sent.split(' ').map
+// (word => word.split('').reverse().join(''));
+// console.log(finalres);
+
+// 22. in array of number and stirng olny add those number
+// which are not string 
+
+// let arr = [1, 'hello', 2, 'world', 3, 'JavaScript'];
+
+// let sum = 0;
+// arr.forEach(item => {
+//     if (typeof item === 'number') {
+//         sum += item;
+//     }
+// });
+// console.log(sum);
+
+// 23. how would you check if a number is an integer ?
+
+// let n = 134.34
+
+// console.log(Number.isInteger(n));
+// console.log(n % 1 === 0)
+
+// 24.write a js fun that reverse a numder
+
+// function reverseNumber(num) {
+//  return Number(num.toString().split('')
+//  .reverse().join(''));
+  
+// }
+
+// console.log(reverseNumber(12345));
+
+// 25. WRITE A JS THAT RETURN A PASSED STRING WITH LETTERS IN ALPHABETICAL ORDER
+
+function sortStringAlphabetically(str) {
+    return str.split('').sort().join('');
+    
+}
+
+console.log(sortStringAlphabetically("hello"));
+
